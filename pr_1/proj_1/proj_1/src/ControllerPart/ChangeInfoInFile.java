@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ChangeInfoInFile {
-	Model model = new Model();
+	ModelTech model = new ModelTech();
 	String mas;
 	public List<String> tabl;
 
@@ -64,7 +64,7 @@ public class ChangeInfoInFile {
 				System.out.println(tabl.get(0)+ tabl.get(1));
 				for (int o = 0; o < tabl.size(); o++) {
 					PrintWriter file = new PrintWriter(new BufferedWriter(new FileWriter
-							("/home/x-val/git/pr_1/ProgrammInfo.txt", true)));
+							("/home/x-val/git/Sklad/Sklad/pr_1/ProgrammInfo.txt", true)));
 					
 					file.println(tabl.get(o));
 					file.close();
