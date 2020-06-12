@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 
 public class AddNewInfo {
 	String mas;
-Model model = new Model();
+	ModelTech model = new ModelTech();
 
 	public AddNewInfo() {
 		mas = "";
@@ -16,7 +16,7 @@ Model model = new Model();
 	public void addNewMaterial() throws Exception {				
 		try {
 			PrintWriter fail = new PrintWriter(
-					new BufferedWriter(new FileWriter("/home/x-val/git/pr_1/ProgrammInfo.txt", true)));
+					new BufferedWriter(new FileWriter("/home/x-val/git/Sklad/Sklad/pr_1/ProgrammInfo.txt", true)));
 			mas = model.CreateNewString();
 			fail.println(mas);
 			mas = "";

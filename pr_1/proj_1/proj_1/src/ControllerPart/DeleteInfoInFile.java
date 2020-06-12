@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class DeleteInfoInFile  {
 	List<String> tabl;
-Model model = new Model();
+	ModelTech model = new ModelTech();
 	public DeleteInfoInFile() {
 		tabl = new ArrayList<String>();
 	}
@@ -46,7 +46,7 @@ Model model = new Model();
 
 			for (int o = 0; o < tabl.size(); o++) {
 				PrintWriter file1 = new PrintWriter(
-						new BufferedWriter(new FileWriter("/home/x-val/git/pr_1/ProgrammInfo.txt", true)));
+						new BufferedWriter(new FileWriter("/home/x-val/git/Sklad/Sklad/pr_1/ProgrammInfo.txt", true)));
 				file1.println(tabl.get(o));
 				file1.close();
 			}		
